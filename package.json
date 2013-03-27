@@ -6,7 +6,7 @@
   "keywords": ["hypem","hypemachine"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/samshelley/hypem.git"
+    "url": "https://github.com/samshelley/hypem-api.git"
   },
   "main": "./lib/hypem.js",
   "readmeFilename": "README.md",
