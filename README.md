@@ -4,7 +4,7 @@
 This is a nodejs port of @JackCA's implementation of a Ruby gem of the api https://github.com/JackCA/hypem/. Note that there are some differences.
 
 ## Installation
-`npm install hypem`
+`npm install hypem-api`
 
 ## Usage
 For general usage:
