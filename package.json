@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "author": "Sam Shelley <sam@samshelley.me>",
   "description": "Wrapper around the hypem api",
-  "keywords": "hypem hypemachine",
+  "keywords": ["hypem","hypemachine"],
   "repository": {
     "type": "git",
     "url": "https://github.com/samshelley/hypem.git"
   },
   "main": "./lib/hypem.js",
   "readmeFilename": "README.md",
-  "license": "BSD",
+  "license": "MIT"
 }
