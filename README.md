@@ -8,7 +8,7 @@ This is an unofficial nodejs wrapper around the (undocumented? -- I couldn't fin
 ## Usage
 For general usage:
 ```javascript
-var Hypem = require("hypem-api");
+var Hypem = require("node-hypem");
 ```
 The `Hypem` object has both a `Playlist` object, which can grab information about the various song lists on the hypem website, and a `User` object which returns playlist specific to the provided user.
 
