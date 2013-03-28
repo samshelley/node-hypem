@@ -3,7 +3,7 @@
 This is an unofficial nodejs wrapper around the (undocumented? -- I couldn't find anything) **Hype Machine** (http://hypem.com) public API. It is a port of [@JackCA's](https://github.com/JackCA/) implementation of a [Ruby gem](https://github.com/JackCA/hypem/) of the api. Note that there are some differences.
 
 ## Installation
-`npm install hypem-api`
+`npm install node-hypem`
 
 ## Usage
 For general usage:
