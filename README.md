@@ -10,7 +10,7 @@ For general usage:
 ```javascript
 var Hypem = require("node-hypem");
 ```
-The `Hypem` object has both a `Playlist` object, which can grab information about the various song lists on the hypem website, and a `User` object which returns playlist specific to the provided user.
+The `Hypem` object has both a `Playlist` object, which can grab information about the various song lists on the hypem website, and a `User` object which returns playlists specific to the provided user.
 
 ###Playlist
 Playlist functions return json playlist data. All parameters except for `filter` are required (which defaults to `all`). As the api does not provide cursors, paging may have concurrency issues if you don't monitor changes.
