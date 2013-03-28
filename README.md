@@ -1,7 +1,6 @@
 # Hypem NodeJS Wrapper
 
-**Hype Machine** (http://hypem.com) has an undocumented read-only public API.
-This is a nodejs port of @JackCA's implementation of a Ruby gem of the api https://github.com/JackCA/hypem/. Note that there are some differences.
+This is an unofficial nodejs wrapper around the (undocumented? -- I couldn't find anything) **Hype Machine** (http://hypem.com) public API. It is a port of [JackCA's](https://github/JackCA/) implementation of a [Ruby gem](https://github.com/JackCA/hypem/) of the api. Note that there are some differences.
 
 ## Installation
 `npm install hypem-api`
@@ -11,23 +10,23 @@ For general usage:
 ```javascript
 var Hypem = require("hypem-api");
 ```
-The `Hypem` object has both a `Playlist` object, which can grab information about the various song lists on the hypem website, and `User` object which returns a user object
+The `Hypem` object has both a `Playlist` object, which can grab information about the various song lists on the hypem website, and a `User` object which returns playlist specific to the provided user.
 
 ###Playlist
-Playlist commands return JSON playlist data. All parameters except for `filter` are required (which defaults to `all`. As there are no cursors offered, paging can have concurrency issues.
+Playlist functions return json playlist data. All parameters except for `filter` are required (which defaults to `all`). As the api does not provide cursors, paging may have concurrency issues if you don't monitor changes.
 ```javascript
 Hypem.playlist.popular(filter, page_number, callback(data)) //Valid arguments for filter are: all, lastweek, remix, noremix, artists, twitter`
-Hypem.playlist.latest(filter, page_number, callback(data)) //Valid arguments for filter are: all, remix, noremix, us`
+Hypem.playlist.latest(filter, page_number, callback(data)) //Valid arguments for filter are: all, remix, noremix, us
 Hypem.playlist.artist(artist_name, page_number, callback(data))
-Hypem.playlist.blog(blog_name, page_number, callback(data))
+Hypem.playlist.blog(blog_id, page_number, callback(data)) //note that you need the blog id, not it's name
 Hypem.playlist.search(search_query, page_number, callback(data))
-Hypem.playlist.tags([tag_array], page_number, callback(data))
+Hypem.playlist.tags([tag_array], page_number, callback(data)) //API warns against using too many tags
 ```
 
 ###User
 `Hypem.user(user_name)` creates a new user object. If the username is invalid, specific user requests will return either `[]` or `null` depending on the api call.
 
-The following requests extend the playlist object and return lists of tracks.
+The following requests return playlists of tracks specific to the user.
 ```javascript
 Hypem.user(user_name).loved(page_number, callback(data))
 Hypem.user(user_name).feed(page_number, callback(data))

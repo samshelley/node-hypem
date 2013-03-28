@@ -1,8 +1,8 @@
 {
   "name": "hypem-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Sam Shelley <sam@samshelley.me>",
-  "description": "Wrapper around the hypem api",
+  "description": "nodejs wrapper for the hypem.com read-only public api",
   "keywords": ["hypem","hypemachine"],
   "repository": {
     "type": "git",
