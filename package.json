@@ -1,12 +1,12 @@
 {
-  "name": "hypem-api",
+  "name": "node-hypem",
   "version": "0.0.2",
   "author": "Sam Shelley <sam@samshelley.me>",
   "description": "nodejs wrapper for the hypem.com read-only public api",
   "keywords": ["hypem","hypemachine"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/samshelley/hypem-api.git"
+    "url": "https://github.com/samshelley/node-hypem.git"
   },
   "main": "./lib/hypem.js",
   "readmeFilename": "README.md",
