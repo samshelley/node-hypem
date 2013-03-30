@@ -1,6 +1,6 @@
 {
   "name": "node-hypem",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Sam Shelley <sam@samshelley.me>",
   "description": "nodejs wrapper for the hypem.com read-only public api",
   "keywords": ["hypem","hypemachine"],

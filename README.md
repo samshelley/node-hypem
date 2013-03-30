@@ -16,7 +16,7 @@ All callbacks are of the form `function(err, response)`.
 ###Playlist
 Playlist functions return json playlist data. All parameters except for `filter` are required (which defaults to `all`). As the api does not provide cursors, paging may have concurrency issues if you don't monitor changes.
 ```javascript
-Hypem.playlist.popular(filter, page_number, callback) //Valid arguments for filter are: all, lastweek, remix, noremix, artists, twitter`
+Hypem.playlist.popular(filter, page_number, callback) //Valid arguments for filter are: all, lastweek, remix, noremix, artists, twitter
 Hypem.playlist.latest(filter, page_number, callback) //Valid arguments for filter are: all, remix, noremix, us
 Hypem.playlist.artist(artist_name, page_number, callback)
 Hypem.playlist.blog(blog_id, page_number, callback(data)) //note that you need the blog id, not it's name
