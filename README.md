@@ -19,9 +19,9 @@ Playlist functions return json playlist data. All parameters except for `filter`
 Hypem.playlist.popular(filter, page_number, callback) //Valid arguments for filter are: all, lastweek, remix, noremix, artists, twitter
 Hypem.playlist.latest(filter, page_number, callback) //Valid arguments for filter are: all, remix, noremix, us
 Hypem.playlist.artist(artist_name, page_number, callback)
-Hypem.playlist.blog(blog_id, page_number, callback(data)) //note that you need the blog id, not it's name
-Hypem.playlist.search(search_query, page_number, callback(data))
-Hypem.playlist.tags([tag_array], page_number, callback(data)) //API warns against using too many tags
+Hypem.playlist.blog(blog_id, page_number, callback) //note that you need the blog id, not it's name
+Hypem.playlist.search(search_query, page_number, callback)
+Hypem.playlist.tags([tag_array], page_number, callback) //API warns against using too many tags
 ```
 
 ###User
